@@ -637,7 +637,7 @@ header {
 }
 
 .accordion {
-	min-height: 420px;
+	min-height: 440px;
 }
 .accordion .active .accordion-title::after {
 	transform: rotate(-45deg);
