@@ -1610,10 +1610,10 @@ header {
 
     /*PORTFOLIO*/
      .portfolio-item .portfolio-img {
-	height: 300px;
+	height: 250px;
     }
     .big-item .portfolio-img {
-	height: 600px;
+	height: 500px;
     }
 
     /*footer*/
