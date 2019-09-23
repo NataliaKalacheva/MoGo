@@ -91,23 +91,38 @@ header {
 
 }
 
-.header-content.fixed {
-    position: fixed;
-
-    width: 100%;
+.header-wrapper.fixed {
+	position: fixed;
+	left:0;
+	right:0;
+	width: 100%;
+	
     min-height: 50px;
 	background-color: #e88182;
+	background:linear-gradient(to top, #e88182, #efd789);
 	border-radius: 0 0 10px 10px;
-	z-index: 1;
+	z-index: 100;
 
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-
+.fixed .header-content {
+	padding-right: 15px;
+	padding-left:15px;
+	padding-top:10px;
+	position: static;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 1200px;
+}
 .header-logo {
 
 	font-weight: 700;
 	font-size: 30px;
 	padding-bottom: 10px;
+	margin-left: 15px;
+}
+.header-logo a:hover {
+	text-decoration: none;
 }
 .header-navigation {
 	display: flex;
@@ -119,12 +134,12 @@ header {
 }
 
 .header-navigation.active {
-	display: block;
+	display: none;
     position: absolute;
-    top:50px;
+    top:40px;
     left: 0;
     width: 100%;
-    background-color: #e88182;
+	background-color: rgba(235, 139, 140, .9);
     z-index: 10;    
 }
 
@@ -135,6 +150,14 @@ header {
 	margin-right: 50px;
 	padding-bottom: 10px;
 }
+
+.header-navigation.active .nav-link {
+	padding-bottom: 5px;
+}
+.last-nav-link {
+	margin-right: 15px;
+}
+.nav-link.active,
 .nav-link:hover,
 .nav-link:focus {
 	color: #fce38a;
@@ -155,7 +178,7 @@ header {
     opacity: 0;
     transition: opacity .3s linear;
 }
-
+.nav-link.active:after,
 .nav-link:hover:after,
 .nav-link:focus:after {
 	opacity: 1;
@@ -167,12 +190,16 @@ header {
 	height: 30px;
     display: none;
 
-	top: 15px;
-	right: 15px;
+	top: 8px;
+	right: 20px;
 
 	border: 0;
 	background-color: transparent;
 	cursor: pointer;
+	transition: transform .3s linear;
+}
+.nav-toggle:hover {
+	transform: scale(.9);
 }
 .nav-toggle:focus {
 	outline: none;
@@ -608,6 +635,10 @@ header {
 	transform: rotate(135deg);
 
 }
+
+.accordion {
+	min-height: 420px;
+}
 .accordion .active .accordion-title::after {
 	transform: rotate(-45deg);
 }
@@ -628,14 +659,14 @@ header {
 	overflow: hidden;
     margin-top: 0;
 	box-sizing: border-box;
-
-	transition: height 0.3s ease-out;
+    border: 1px solid #e5e5e5;
+	transition: height 0.6s linear;
 }
 .accordion .active p {
     height: 155px;
     overflow-y: scroll;
     padding: 15px 20px;
-    border: 1px solid #e5e5e5;
+    
     border-top: none;
 }
 
@@ -1403,9 +1434,9 @@ header {
 	/*HEADER*/
     .header-navigation {
     	display: none;
-    }
-	nav {
-		/*display: none;*/
+	}
+	.header-navigation.active {
+		display: block;
 	}
 	.nav-toggle {
 		display: block;

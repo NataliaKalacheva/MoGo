@@ -11,40 +11,40 @@
 <body>
   
   <header>
-    
-  	    <div class="wrapper">
+    <div class="wrapper">
+  	    <div class="header-wrapper">
         	<section class="header-content"><!--fixed-->
            			<div class="header-logo">
-           				MoGo
+                           <a href="#" data-scroll="#intro">
+                              MoGo
+                           </a>
            		    </div>
                    	<nav>
                    		<ul class="header-navigation"><!--active-->
                    			<li>
-                   				<a class="nav-link" href="">About</a>
+                   				<a class="nav-link active" href="#" data-scroll="#about">About</a>
                    			</li>
                    			<li>
-                   				<a class="nav-link" href="">Service</a>
+                   				<a class="nav-link" href="#" data-scroll="#service">Service</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#"  data-scroll="#team">Team</a>
+                            </li>
+                   			<li>
+                   				<a class="nav-link" href="#" data-scroll="#work">Work</a>
                    			</li>
                    			<li>
-                   				<a class="nav-link" href="">Work</a>
-                   			</li>
-                   			<li>
-                   				<a class="nav-link" href="">Blog</a>
-                   			</li>
-                   			<li>
-                   				<a class="nav-link" href="">Contact</a>
-                   			</li>
+                   				<a class="nav-link last-nav-link" href="#" data-scroll="#blog">Blog</a>
+                            </li>
+                            
                    		</ul>
                    	</nav>      
                     <button class="nav-toggle"> <!--active-->
                         <div class="nav-toggle-item"></div>
                     </button>
             </section>
-
-        </div><!--wrapper-->
-
-        <div class="wrapper">
-            <div class="intro-wrapper">
+  	    </div>
+            <div class="intro-wrapper" id="intro">
             	<section class="intro">
             		<h3 class="intro-subtitle">Creative Template</h3>
             		<h1 class="intro-title">Welcome to mogo</h1>
@@ -69,8 +69,8 @@
     </header>
 
     <main>
-
-    	<section class="section">
+        <!--ABOUT-->
+    	<section class="section" id="about">
     	    <div class="wrapper">
     	    	<section class="section-header">
          			<h3 class="section-subtitle">What we do</h3>
@@ -99,7 +99,7 @@
     			</section>
     	    </div>
     	</section>
-
+        <!--STATISTICS-->
     	<section class="statistics">
     		<div class="wrapper">
     		   <h2 class="visually-hidden">Advantages</h2>
@@ -127,8 +127,8 @@
     		   </ul>
     	    </div>
     	</section>
-
-    	<section class="section">
+        <!--SERVICES-->
+    	<section class="section" id="service">
     	    <div class="wrapper">
     	    	<section class="section-header">
          			<h3 class="section-subtitle">We work with</h3>
@@ -169,7 +169,7 @@
          		</ul>
             </div>
     	</section>
-        
+        <!--DEVICES-->
     	<section class="devices">
 
     		<div class="wrapper">
@@ -183,7 +183,7 @@
          	    </div>
          	</div>
     	</section>
-
+        <!--SERVICE ACCORDION-->
     	<section class="section">
     	    <div class="wrapper">
     	    	<section class="section-header">
@@ -197,7 +197,7 @@
          	    	</div>
          	    	<div  class="activity-item">
          	    		<div class="accordion">
-         	    			<div class="accordion-item">
+         	    			<div class="accordion-item active">
          	    				<h4 class="accordion-title">Photography</h4>
          	    				<img src="img/icons/pic.svg" alt="icon">
          	    				<p class="scroll">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
@@ -218,6 +218,7 @@
          	    </section>
          	</div>
         </section>
+        <!--REVIEW-->
         <section class="section-gray">
     	    <div class="wrapper">
          			<h3 class="visually-hidden">Reviews</h3>
@@ -232,8 +233,8 @@
          		    </p>
          	</div>
         </section> 	    
-
-        <section class="section">
+        <!--TEAM-->
+        <section class="section" id="team">
             <div class="wrapper">
                 <section class="section-header">
                     <h3 class="section-subtitle">Who we are</h3>
@@ -280,6 +281,7 @@
                 </section>
             </div>
         </section>
+        <!--STAMPS-->
         <section class="section-gray">
          <div class="wrapper">
             <section class="section-stamps">
@@ -292,8 +294,8 @@
             </section>
         </div>
     </section>
-
-        <section class="section">
+        <!--PORTFOLIO-->
+        <section class="section" id="work">
         
             <div class="wrapper">
                 <section class="section-header">
@@ -372,7 +374,7 @@
                      </div>
                  </section>
         </section>
-
+        <!--REVIEW-->
         <section class="section-review">
             <div class="wrapper">
                     <h3 class="visually-hidden">Reviews</h3>
@@ -383,7 +385,7 @@
                    </p>
             </div>
         </section>   
-
+        <!--CLIENTS-->
         <section class="section-clients">
             <div class="wrapper">
                 <section class="section-header">
@@ -421,8 +423,8 @@
             </div>
            </div>
         </section>
-
-        <section class="section">
+        <!--BLOG-->
+        <section class="section" id="blog">
             <div class="wrapper">
                 <section class="section-header">
                     <h3 class="section-subtitle">Our stories</h3>
@@ -468,7 +470,7 @@
                 </section>
             </div>
         </section>
-
+        <!--MAP-->
         <section class="section-map">
             <div class="map-item">
                 <a href="https://goo.gl/maps/q26Gny3CGVvHHLje8" target="_about:blank">
@@ -477,6 +479,7 @@
                 </a>
             </div>
         </section>
+
     <footer class="footer">
         <div class="wrapper footer-inner">
             <section class="footer-col--first">               
@@ -622,17 +625,23 @@
            </div>
         </footer>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
     <script type="text/javascript">
-        
-       var accordion = document.getElementsByClassName('accordion-item');
        
+       var accordion = document.querySelectorAll('.accordion-item');
+       console.log(accordion);
        for (var i=0; i < accordion.length; i++) {
+           console.log(accordion[i]);
         accordion[i].addEventListener('click', function() {
-            console.log('Нажали на заголовок аккордиона');
-            this.classList.toggle('active');
-            console.log('добавили класс актив')
+            for (var j=0; j < accordion.length; j++) {
+                accordion[j].classList.remove('active');
+            }
+            this.classList.add('active');
         })
        }
+    
     </script>
+    
 </body>
 </html>
